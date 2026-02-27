@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: con1
-          image: pranaygupta1988/webapp1:latest
+          image: pranaygupta1988/webapp1:1
           ports:
             - containerPort: 80
               protocol: TCP
