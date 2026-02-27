@@ -11,7 +11,7 @@ pipeline{
         }
         stage("Image Building"){
             steps{
-                sh "docker image build -t pranaygupta1988/webapp1:$BUILD_NUMBER ."
+                sh "docker image build --no-cache -t pranaygupta1988/webapp1:$BUILD_NUMBER ."
             }
         }
         stage("Pushing Image"){
