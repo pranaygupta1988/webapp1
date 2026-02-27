@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: default
   name: deploy1
   labels:
     app: webdep1
@@ -33,6 +34,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: default
   name: webser1
   labels:
     app: ser1
