@@ -19,6 +19,11 @@ pipeline{
                 sh "docker image push pranaygupta1988/webapp1:$BUILD_NUMBER"
             }
         }
+        stage("Debug"){
+           steps{
+            sh "cat index.html"
+          }
+        }
         stage("Update Deployment File"){
             steps{
                 sh """
